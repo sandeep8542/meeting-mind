@@ -26,13 +26,6 @@ app.use("/api/ai", require("./routes/ai"));
 app.use("/api/actions", require("./routes/actionRoutes"));
 const path = require("path");
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
-  });
-}
 
 // ✅ Test route
 app.get("/", (req, res) => {
