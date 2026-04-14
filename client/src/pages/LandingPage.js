@@ -6,7 +6,7 @@ import styles from './LandingPage.module.css';
 
 const features = [
   { icon: Mic, title: 'Live Voice Recording', desc: 'Real-time speech-to-text with high accuracy across accents and audio environments.' },
-  { icon: Brain, title: 'Gemini AI Analysis', desc: 'Powered by Google Gemini to extract meaning, sentiment, and structure from every word.' },
+  { icon: Brain, title: 'Analysis by OpenRouter', desc: 'Powered by OpenRouter to extract meaning, sentiment, and structure from every word.' },
   { icon: CheckSquare, title: 'Auto Task Creation', desc: 'Action items detected and turned into tracked tasks automatically from conversation.' },
   { icon: Calendar, title: 'Calendar Events', desc: 'Mentioned dates, times, and commitments are converted to calendar events instantly.' },
   { icon: FileText, title: 'Smart Meeting Notes', desc: 'Clean, structured notes with key points and executive summaries generated in seconds.' },
@@ -52,7 +52,7 @@ export default function LandingPage() {
         >
           <div className={styles.badge}>
             <Zap size={12} />
-            <span>Powered by Google Gemini AI</span>
+            <span>Powered by OpenRouter</span>
           </div>
           <h1 className={styles.heroTitle}>
             Your meetings,<br />
@@ -179,7 +179,7 @@ export default function LandingPage() {
           <div className={styles.logoIcon}><Mic size={14} /></div>
           <span>MeetingMind</span>
         </div>
-        <p className={styles.footerText}>Built with Node.js, React, MongoDB & Gemini AI</p>
+        <p className={styles.footerText}>Built with Node.js, React, MongoDB & OpenRouter</p>
       </footer>
     </div>
   );

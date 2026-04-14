@@ -204,7 +204,7 @@ export default function MeetingPage() {
                       <Brain size={36} />
                     </motion.div>
                   </div>
-                  <h2 className={styles.recordTitle}>Gemini is analyzing...</h2>
+                  <h2 className={styles.recordTitle}>AI is analyzing...</h2>
                   <p className={styles.recordSubtitle}>
                     Extracting tasks, events, notes, and insights from your transcript.
                   </p>

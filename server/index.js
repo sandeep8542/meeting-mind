@@ -7,7 +7,7 @@ const app = express();
 
 // ✅ Middleware
 app.use(cors({
-  origin: "*", // later replace with frontend URL
+  origin: "https://aimeetingsminds.netlify.app",
   credentials: true
 }));
 app.use(express.json());
