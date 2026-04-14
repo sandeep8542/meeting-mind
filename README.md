@@ -1,13 +1,13 @@
 # 🎙️ MeetingMind — AI-Powered Meeting Intelligence
 
-> Transform spoken conversations into structured tasks, calendar events, and meeting notes — powered by Google Gemini AI.
+> Transform spoken conversations into structured tasks, calendar events, and meeting notes — powered by  OpenRouter.
 
 ---
 
 ## ✨ Features
 
 - **🎤 Live Voice Recording** — Real-time speech-to-text using Web Speech API
-- **🧠 Gemini AI Processing** — Automatically extracts tasks, events, notes, decisions
+- **🧠 OpenRouter AI Processing** — Automatically extracts tasks, events, notes, decisions
 - **📋 Smart Action Management** — Track tasks, mark complete, filter by type/status
 - **📅 Calendar Event Detection** — Converts mentioned dates/times into events
 - **📊 Dashboard Analytics** — Meeting stats, recent history, completion progress
@@ -23,7 +23,7 @@
 | Frontend | React 18, Framer Motion, React Router v6 |
 | Backend | Node.js, Express.js |
 | Database | MongoDB + Mongoose |
-| AI | Google Gemini 1.5 Flash |
+| AI | OpenRouter |
 | Auth | JWT + bcryptjs |
 | Speech | Web Speech API (browser-native) |
 | Styling | CSS Modules with design system |
@@ -35,7 +35,7 @@
 ### Prerequisites
 - Node.js v18+
 - MongoDB Atlas account (or local MongoDB)
-- Google Gemini API Key
+- OpenRouter API Key
 
 ### 1. Clone & Install
 
@@ -57,14 +57,14 @@ Edit `.env`:
 PORT=5000
 MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/meetingmind
 JWT_SECRET=your_super_long_random_secret_here
-GEMINI_API_KEY=your_gemini_api_key_here
+OPENROUTER_API_KEY=your_openrouter_api_key_here
 NODE_ENV=development
 ```
 
-**Get a Gemini API Key:**
-1. Visit [Google AI Studio](https://aistudio.google.com)
+**Get a OpenRouter API Key:**
+1. Visit (https://openrouter.ai/)
 2. Click "Get API Key" → Create API key
-3. Paste into `.env` as `GEMINI_API_KEY`
+3. Paste into `.env` as `OpenRouter`
 
 **Get a MongoDB URI:**
 1. Visit [MongoDB Atlas](https://cloud.mongodb.com)
@@ -105,7 +105,7 @@ meeting-mind/
 │   │   ├── authController.js
 │   │   ├── meetingController.js
 │   │   ├── actionController.js
-│   │   └── aiController.js   # Gemini AI integration
+│   │   └── aiController.js   OpenRouter AI integration
 │   ├── routes/
 │   │   ├── auth.js
 │   │   ├── meetings.js
